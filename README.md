@@ -85,13 +85,12 @@ server {
 		C:\WINDOWS\system32\drivers\etc\hosts
 	
 	
-	```
-
-127.0.0.1       cms.echoidea.cn
-127.0.0.1       weixin.echoidea.cn
-127.0.0.1       www.yesido.asia
-127.0.0.1       yesido.asia
-127.0.0.1       www.echoidea.cn
-
-127.0.0.1       echoidea.cn	
-	```
+		```
+	127.0.0.1       cms.echoidea.cn
+	127.0.0.1       weixin.echoidea.cn
+	127.0.0.1       www.yesido.asia
+	127.0.0.1       yesido.asia
+	127.0.0.1       www.echoidea.cn
+	
+	127.0.0.1       echoidea.cn	
+		```
