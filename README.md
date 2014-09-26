@@ -95,3 +95,31 @@ test
 	
 	127.0.0.1       echoidea.cn	
 ```
+
+
+
+add to services for windows (Windows Service Wrapper)
+
+download by maven :
+	http://download.java.net/maven/2/com/sun/winsw/winsw/
+	
+https://kenai.com/projects/winsw/pages/ConfigurationSyntax
+http://mercurial.selenic.com/wiki/HgServeNginxWindows
+
+```
+the config file name same with winsw-1.9-bin.exe,then xml file is winsw-1.9-bin.xml
+
+<service>
+  <id>nginx</id>
+  <name>nginx</name>
+  <description>nginx</description>
+  <executable>c:\nginx\nginx.exe</executable>
+  <logpath>c:\nginx\</logpath>
+  <logmode>roll</logmode>
+  <depend></depend>
+  <startargument>-p c:\nginx</startargument>
+  <stopargument>-p c:\nginx -s stop</stopargument>
+</service>
+```
+
+Execute the command “c:\nginx\winsw-1.9-bin.exe install”.
