@@ -1,0 +1,1 @@
+winsw-1.9-bin.exe install

@@ -1,0 +1,11 @@
+<service>
+  <id>nginx</id>
+  <name>nginx</name>
+  <description>nginx</description>
+  <executable>d:\nginx\nginx.exe</executable>
+  <logpath>d:\nginx\</logpath>
+  <logmode>roll</logmode>
+  <depend></depend>
+  <startargument>-p d:\nginx</startargument>
+  <stopargument>-p d:\nginx -s stop</stopargument>
+</service>
