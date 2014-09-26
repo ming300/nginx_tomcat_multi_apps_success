@@ -1,12 +1,12 @@
-nginx_tomcat_multi_apps_success
+nginx_tomcat_multi_apps_success nginx鍜宼omcat澶氫釜搴旂敤閰嶅埗鎴愬姛!
 ===============================
 
 nginx tomcat multi apps by  Virtual host,Nginx configuration to pass site directly to tomcat webapp with context
-nginx 和tomcat多个应用配制成功
 
 
-nginx version
-nginx-1.7.4-win32-setup.exe  http://kevinworthington.com/nginx-for-windows/
+
+# nginx version
+	nginx-1.7.4-win32-setup.exe  http://kevinworthington.com/nginx-for-windows/
 
 
 # Setup the Virtual host
@@ -78,8 +78,20 @@ server {
 
 
 
-test
+# test
+	need to debug,change the web site location to 127.0.0.1
+	
+	for windowns xp
+		C:\WINDOWS\system32\drivers\etc\hosts
+	
+	
+	```
 
-for windowns xp
+127.0.0.1       cms.echoidea.cn
+127.0.0.1       weixin.echoidea.cn
+127.0.0.1       www.yesido.asia
+127.0.0.1       yesido.asia
+127.0.0.1       www.echoidea.cn
 
-	C:\WINDOWS\system32\drivers\etc\hosts
+127.0.0.1       echoidea.cn	
+	```
