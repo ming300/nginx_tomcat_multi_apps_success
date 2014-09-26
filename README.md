@@ -11,7 +11,7 @@ nginx version
 
 Setup the Virtual host
 	Add a Host entry to the Engine portion of $CATALINA_HOME/conf/server.xml
-	```
+```
 	<Engine name="Catalina" defaultHost="localhost">   
 	      <Realm className="org.apache.catalina.realm.LockOutRealm">      
 		<Realm className="org.apache.catalina.realm.UserDatabaseRealm"  resourceName="UserDatabase"/>
@@ -47,21 +47,21 @@ Setup the Virtual host
 			<Alias>www.echoidea.cn</Alias>
 		</Host>
 	</Engine>
-	```
+```
 
 
 	Create the appBase directory $CATALINA_HOME/apps_echoidea/
 
 	Configure the context with $CATALINA_HOME/apps_echoidea/ROOT/META-INF/context.xml
-	```
+```
 	<Context path="/" 
 	    antiResourceLocking="false" />
-	```
+```
 	Deploy blah to $CATALINA_HOME/apps_echoidea/ROOT. This may be as simple as changing app.war to ROOT.war.
 
 	Make sure nginx is still copacetic
 		Just proxy requests for echoidea.cn to localhost and tomcat will take care of the rest:
-		```
+```
 		server {
 		  listen  80; 
 		  server_name echoidea.cn www.echoidea.cn;
@@ -73,8 +73,8 @@ Setup the Virtual host
 		    proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
 		  }
 		}
-		
-		```
+	
+```
 
 
 
@@ -86,7 +86,7 @@ test
 		C:\WINDOWS\system32\drivers\etc\hosts
 	
 	
-	```
+```
 	127.0.0.1       cms.echoidea.cn
 	127.0.0.1       weixin.echoidea.cn
 	127.0.0.1       www.yesido.asia
@@ -94,4 +94,4 @@ test
 	127.0.0.1       www.echoidea.cn
 	
 	127.0.0.1       echoidea.cn	
-	```
+```
